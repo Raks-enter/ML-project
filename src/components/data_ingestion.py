@@ -11,7 +11,7 @@ class DataIngestionConfig:
     import os
     train_data_path: str = os.path.join("artifact", "train.csv") #giving these to the ingestion components to store
     test_data_path: str = os.path.join("artifact", "test.csv")
-    raw_data_path: str = os.path.join("artifact", "data.csv")
+    raw_data_path: str = os.path.join("artifact", "data.csv") #Input required for the file
 
 class DataIngestion:
     def __init__(self):
