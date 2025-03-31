@@ -1,3 +1,5 @@
+#python -m src.components.data_transformation
+
 import os
 import sys
 from src.exception import CustomException
