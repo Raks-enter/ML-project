@@ -1,0 +1,11 @@
+[2025-03-31 21:29:52,303] 26 root - INFO -Entered the data ingestion method or component
+[2025-03-31 21:29:52,314] 30 root - INFO -read the dataset as df
+[2025-03-31 21:29:52,334] 35 root - INFO -train test split initiated
+[2025-03-31 21:29:52,357] 41 root - INFO -Ingestion of the data is completed
+[2025-03-31 21:29:52,372] 61 root - INFO -Read train and test data completed
+[2025-03-31 21:29:52,372] 63 root - INFO -Obtaining preprocessing object
+[2025-03-31 21:29:52,372] 41 root - INFO -Categorical and numerical columns processing completed
+[2025-03-31 21:29:52,374] 80 root - INFO -Applying preprocessing object on training and testing data
+[2025-03-31 21:29:52,408] 90 root - INFO -Saving preprocessing object
+[2025-03-31 21:29:52,413] 31 root - INFO -Splitting training and test input data
+[2025-03-31 21:32:37,559] 102 root - INFO -Best model found: CatBoosting Regressor with R² score: 0.9456086509418807
