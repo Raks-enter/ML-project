@@ -1,0 +1,74 @@
+<html>
+    <body>
+        <div class="login">
+        <h1>Student GPA Prediction Form</h1>
+        <form action="{{ url_for('predict_datapoint')}}" method="post">
+            <div class="mb-3">
+                <label class="form-label">Student ID</label>
+                <input type="text" class="form-control" name="student_id" required>
+            </div>
+    
+            <div class="mb-3">
+                <label class="form-label">Age</label>
+                <input type="number" class="form-control" name="age" required>
+            </div>
+    
+            <div class="mb-3">
+                <label class="form-label">Gender</label>
+                <select class="form-control" name="gender" required>
+                    <option selected disabled value="">Select Gender</option>
+                    <option value="1">Male</option>
+                    <option value="0">Female</option>
+                </select>
+            </div>
+    
+            <div class="mb-3">
+                <label class="form-label">Ethnicity</label>
+                <select class="form-control" name="ethnicity" required>
+                    <option selected disabled value="">Select Ethnicity</option>
+                    <option value="0">Group 0</option>
+                    <option value="1">Group 1</option>
+                    <option value="2">Group 2</option>
+                    <option value="3">Group 3</option>
+                </select>
+            </div>
+    
+            <div class="mb-3">
+                <label class="form-label">Parental Education</label>
+                <select class="form-control" name="parental_education" required>
+                    <option selected disabled value="">Select Level</option>
+                    <option value="0">Level 0</option>
+                    <option value="1">Level 1</option>
+                    <option value="2">Level 2</option>
+                    <option value="3">Level 3</option>
+                    <option value="4">Level 4</option>
+                </select>
+            </div>
+    
+            <div class="mb-3">
+                <label class="form-label">Study Time Weekly (Hours)</label>
+                <input type="number" class="form-control" name="study_time_weekly" required>
+            </div>
+    
+            <div class="mb-3">
+                <label class="form-label">Grade Class</label>
+                <select class="form-control" name="grade_class" required>
+                    <option selected disabled value="">Select Grade</option>
+                    <option value="0.0">Grade 0</option>
+                    <option value="1.0">Grade 1</option>
+                    <option value="2.0">Grade 2</option>
+                    <option value="3.0">Grade 3</option>
+                    <option value="4.0">Grade 4</option>
+                </select>
+            </div>
+    
+            <div class="mb-3">
+                <input class="btn btn-primary" type="submit" value="Predict your GPA " required>
+            </div>
+        </form>
+        </div>
+        <h2>
+            The Prediction is {{results}}
+        </h2>
+    </body>
+</html>
